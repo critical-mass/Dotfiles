@@ -18,6 +18,9 @@ filetype indent on
 "Turn syntax highlighting on.
 syntax on
 
+"Line numbers
+set number
+
 "Highlight cursor line underneath the cursor horizontally.
 set cursorline
 
@@ -47,21 +50,11 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
-call plug#begin('~/.vim/plugged')
 Plugin 'VundleVim/Vundle.vim'
-    Plug 'sheerun/vim-polyglot'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'Valloric/YouCompleteMe'
 
 
-call plug#end()
-filetype plugin indent on
-" Use homebrew's clangd
-let g:ycm_clangd_binary_path = trim(system('brew --prefix llvm')).'/bin/clangd'
-" }}}
-
-
-" MAPPINGS --------------------------------------------------------------- {{{
-
-" Mappings code goes here.
 
 " }}}
 
@@ -74,14 +67,8 @@ augroup filetype_vim
             autocmd FileType vim setlocal foldmethod=marker
 augroup END
 
-" More Vimscripts code goes here.
 
 " }}}
-
-
-" STATUS LINE ------------------------------------------------------------ {{{
-
-" Status bar code goes here.
-
-" }}}
-
+call vundle#end()
+"Load an indent file for the detected file type.
+filetype indent on
