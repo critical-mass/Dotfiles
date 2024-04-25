@@ -18,6 +18,9 @@ filetype indent on
 "Turn syntax highlighting on.
 syntax on
 
+"Set Modifiable
+set modifiable
+
 "Line numbers
 set number
 
@@ -39,6 +42,9 @@ set ignorecase
 "Override the ignorecase option if searching for capital letters.
 "This will allow you to search specifically for capital letters.
 set smartcase
+
+"set visuals 
+set termguicolors
 
 "Use highlighting when doing a search.
 set hlsearch
