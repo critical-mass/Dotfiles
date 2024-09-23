@@ -1,6 +1,4 @@
 # Tools to Configure
-
-- Tmux
-- Vim
-- Divvy
-- ZSH
+- [Tmux](https://github.com/tmux/tmux)
+- [Vim](https://www.vim.org/)
+- [Divvy](https://mizage.com/divvy/)
