@@ -3,3 +3,4 @@
 - Tmux
 - Vim
 - Divvy
+- ZSH
