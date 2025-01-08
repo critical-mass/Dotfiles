@@ -1,10 +1,10 @@
 # Apple M chip setup/deployment guide
 1. install iTerm2
-2. install brew
-	a. install git `brew install git`
-	b. install tmux `brew install tmux`
-	c. install vim `brew install vim`
-3. configure vim
+2. install brew<br>
+	a. install git `brew install git`<br>
+	b. install tmux `brew install tmux`<br>
+	c. install vim `brew install vim`<br>
+3. configure vim<br>
 	a.setup vundle
  
 # Tools to Configure
