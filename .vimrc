@@ -10,7 +10,7 @@ set nocompatible
 filetype off
 
 "Enable plugins and load plugin for the detected file type.
- filetype plugin on
+filetype plugin on
 
 "Load an indent file for the detected file type.
 filetype indent on
@@ -51,16 +51,27 @@ set hlsearch
 
 "Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+"Set F3 as paste mode.
+set pastetoggle=<F3>
+
+
 " }}}
 
+
+" FILETYPE MODS ---------------------------------------------------------------- {{{
+autocmd FileType yaml setlocal indentkeys-=:<:>
+autocmd FileType yaml setlocal ts=2 sw=2 expandtab
+
+" }}}
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'Valloric/YouCompleteMe'
-
-
+Plugin 'https://github.com/tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
 
 " }}}
 
