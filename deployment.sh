@@ -3,6 +3,9 @@
 echo "installing brew"
 $/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+echo "installing rosetta"
+softwareupdate --install-rosetta
+
 brew_install() {
     local package="$1"
 
