@@ -1,11 +1,5 @@
 #!/bin/bash
 
-echo "installing brew"
-$/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-echo "installing rosetta"
-softwareupdate --install-rosetta
-
 brew_install() {
     local package="$1"
 
@@ -17,6 +11,12 @@ brew_install() {
         return 0
     fi
 }
+
+echo "installing brew"
+$/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo "installing rosetta"
+softwareupdate --install-rosetta
 
 declare -a packages=("git", "tmux", "vim")
 
