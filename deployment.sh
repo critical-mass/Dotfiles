@@ -1,5 +1,7 @@
 #!/bin/bash
 
+declare -a packages=("git", "tmux", "vim")
+
 brew_install() {
     local package="$1"
 
@@ -18,8 +20,6 @@ $/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/H
 echo "installing rosetta"
 softwareupdate --install-rosetta
 
-declare -a packages=("git", "tmux", "vim")
-
 for package in "$packages[@]}"; do
     if ! brew_install "$package"; then
         echo($package + " " + "installations failed. Exiting")
@@ -37,5 +37,3 @@ unzip ~/Downloads/divvy.zip && mv ~/Downloads/divvy.app
 
 echo "config being applied to divvy"
 cp ./com.mizage.Divvy.plist ~/Library/Preferences/
-
-
