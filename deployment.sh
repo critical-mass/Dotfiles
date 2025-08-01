@@ -22,7 +22,7 @@ declare -a packages=("git", "tmux", "vim")
 
 for package in "$packages[@]}"; do
     if ! brew_install "$package"; then
-        echo "One or more installations failed. Exiting"
+        echo($package + " " + "installations failed. Exiting")
         exit 1
     fi
 done
