@@ -46,6 +46,9 @@ set smartcase
 "set visuals 
 set termguicolors
 
+"Set indent highlight
+let g:indentLine_char = '⦙'
+
 "Use highlighting when doing a search.
 set hlsearch
 
@@ -71,9 +74,20 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'https://github.com/tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
-
+Plugin 'vim-airline/vim-airline'
 " }}}
+
+" SYNTAX HIGHLIGHTING --------------------------------------------------- {{{
+if has("autocmd")
+	filetype plugin indent on
+
+	" Yaml
+	autocmd BufNewFile,BufRead                  *.yaml,*.yml setlocal filetype=yaml
+	autocmd FileType                            yaml         setlocal sw=2 sts=2 et
+
+endif
+" }}}
+
 
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
