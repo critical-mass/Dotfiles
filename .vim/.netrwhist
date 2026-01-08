@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/daniel/Development/Dotfiles'
+let g:netrw_dirhist_2='/Users/daniel/Development'
+let g:netrw_dirhist_1='/Users/daniel'
+let g:netrw_dirhist_0='/Users/daniel/Development'
+let g:netrw_dirhist_9='/Users/daniel/Development/Dotfiles'
+let g:netrw_dirhist_8='/Users/daniel/Development/Dotfiles/.git'
+let g:netrw_dirhist_7='/Users/daniel/Development/Dotfiles'
+let g:netrw_dirhist_6='/Users/daniel/Development'
+let g:netrw_dirhist_5='/Users/daniel'
+let g:netrw_dirhist_4='/Users/daniel/Downloads'
